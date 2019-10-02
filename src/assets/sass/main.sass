@@ -1,0 +1,144 @@
+@import '_fonts.sass' 
+
+
+$main_font: "Helvetica"
+$light_font: "Helvetica-Light"
+$bold_font: "Helvetica-Bold"
+$primary_color: #2C2C2C
+
+*
+	margin: 0;
+	box-sizing: border-box
+	font-family: $main_font
+img
+	max-width: 100%
+a
+	color: initial
+	text-decoration: none
+	&:visited, &:hover
+		color: inherit
+
+ 
+
+.wrap
+	max-width:  1440px
+	width: 100%
+	margin: 0px auto
+
+	height: inherit
+	display: inherit
+	flex-wrap: inherit
+	flex-direction: inherit
+	justify-content: inherit
+	align-items: inherit
+	grid-template-rows: inherit
+	grid-template-columns: inherit
+	grid-gap: inherit
+.hide_mob_br
+	display: block
+@media (max-width: 450px)
+	.hide_mob_br
+		display: none
+.logo
+	margin-left: 80px
+	&-subtitle
+		font-size: 12px
+		line-height: 14px
+		color: #2C2C2C
+@media (max-width: 450px)	
+	.logo 
+		margin-left: 20px
+		&-subtitle
+			font-size: 10px
+			line-height: 11px
+
+.offer
+	margin: auto
+	overflow: hidden
+	width: 335px
+	height: 335px
+	border-radius: 10px
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1)
+	background: #fff
+	&-title
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 24px;
+		padding: 15px
+		color: #FFF
+		background: linear-gradient(101.81deg, #F2994A 2.74%, #EB5757 100.99%)
+	&-price
+		margin: 35px 0px 20px  0px
+		display: flex 
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&_old
+			font-size: 14px
+			line-height: 100%
+			text-decoration-line: line-through
+			color: #000000
+		&_new
+			margin-top: 5px
+			font-size: 48px 
+			font-weight: bold
+			font-family: $bold_font
+			background: linear-gradient(98.98deg, #F2994A 2.74%, #EB5757 100.99%)
+			-webkit-background-clip: text  
+			-webkit-text-fill-color: transparent
+	&-text
+		text-align: center
+		font-size: 24px; 
+		color: $primary_color
+		font-family: $light_font
+		
+		&_logo
+			font-size: 40px
+			font-family: $bold_font
+			background: linear-gradient(98.98deg, #F2994A 2.74%, #EB5757 100.99%)
+			-webkit-background-clip: text  
+			-webkit-text-fill-color: transparent
+
+@media (max-width: 450px)
+	.offer 
+		width: 250px    
+		height: auto
+		&-title 
+			font-size: 20px
+		&-price
+			margin: 17px 0px 
+			&_old 
+			&_new 
+		&-text 
+			font-size: 16px;    
+			&_logo
+				font-size: 32px
+				margin-top: 15px
+				margin-bottom: 20px 
+.button
+	display: flex
+	align-items: center
+	justify-content: center
+	font-family: $light_font
+	font-size: 24px
+	width: 335px
+	height: 60px
+	color: #fff
+	background: linear-gradient(103.15deg, #F2994A 2.74%, #EB5757 100.99%)
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 10px
+	margin: auto
+
+@media (max-width: 450px)
+	.button  
+		max-width: 335px
+		width: 98%    
+
+
+
+@import '_1header.sass'
+@import '_2main.sass' 
+@import '_3info.sass' 
+@import '_4how_works.sass' 
+@import '_5footer.sass' 
