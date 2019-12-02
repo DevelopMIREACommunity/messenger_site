@@ -2,7 +2,7 @@
 $mainFont                : "Helvetica-Regular", "Arial", sans-serif;
 $secondFont              : "Arial", sans-serif;
 // Size
-$mainFontColor           : #494949; //
+$mainFontColor           : #494949;
 $mainFontSize            : 18px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
@@ -16,27 +16,28 @@ $lgTableWidth            : 960px;
 $mdTableWidth            : 760px;
 $phoneWidth              : 500px;
 $mdPhoneWidth            : 400px;
+$smPhoneWidth            : 320px;
 
 
 
 
 // Main color
 $default-color           : #ffffff;
-$primary-color           : #444ce0; ///
+$primary-color           : #444ce0;
 $success-color           : #26de81;
-$danger-color            : #800b17; //
+$danger-color            : #800b17;
 $warning-color           : #fed330;
 $light-color             : #999999;
 $purple-color            : #8854d0;
 
 // Neutral Color
-$neutral-primary         : #383838; // 
-$neutral-regular         : #686868; //
+$neutral-primary         : #383838;
+$neutral-regular         : #686868;
 $neutral-secondary       : #909399;
 $neutral-placeholder     : #c0c4cc;
 
 // Border Color
 $border-base             : #dcdfe6;
-$background-light        : #e8e8e8; //
+$background-light        : #e8e8e8;
 $border-lighter          : #ebeef5;
 $border-lightex          : #f2f6fc;
