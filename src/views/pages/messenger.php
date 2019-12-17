@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Регистрация</title>
+    <title>7Dev</title>
     <meta name="theme-color" content="#fff" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -23,25 +23,6 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <header class="header">
-           <nav>
-              <ul class="menu">
-                <li class="menu__item menu_logo">
-                  <a href="#">LOGO</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#">Features</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#">FAQ</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#">Sign In/Sign Up</a>
-                </li>
-              </ul>
-          </nav>
-        </header>
-        <!-- /.header --> 
 
         <div  class="wrapper-content" >
           <div class="container">
