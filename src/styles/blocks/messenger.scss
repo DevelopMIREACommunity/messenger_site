@@ -3,7 +3,7 @@
 	height: 700px;
 	border: 1px solid #979797;
 	background: #D9D9D9;
-	font-family: Akrobat;
+	font-family: "Akrobat-Regular";
 
 }
 
@@ -27,8 +27,17 @@
 	background: white;
 }
 
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
 .contacts__form{
 	display: flex;
+}
+
+.contacts__form button{
+	background: white;
 }
 
 .chat{
