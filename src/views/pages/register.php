@@ -23,19 +23,21 @@
     <div class="wrapper">
       <div class="container">
         <header class="header">
-           <nav>
+          <div class="container">
+            <nav>
               <ul class="menu">
                 <li class="menu__item menu_logo">
-                  <a href="#">LOGO</a>
+                  <a href="#"><img src="" alt="LOGO"></a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Timetable</a>
+                  <a href="#">Рассписание</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Sign In/Sign Up</a>
+                  <a href="../@@webRoot/pages/login.php">Вход/Регистрация</a>
                 </li>
               </ul>
           </nav>
+          </div>
         </header>
         <!-- /.header --> 
 
@@ -43,43 +45,50 @@
           <div class="container">
             <div class="register">
               <h1 class="register__title">Регистрация</h1>
+              <p class="login__error_msg error_msg"></p> 
               <form id="register__form" class="register__form" action="" method="POST" enctype="text/plain">
                 <div class="register__form-leftright">
                   <ul class="register__form-left">
                     <li>
                       <!-- <p><strong>Ваше Имя</strong></p> -->
-                      <input id="register__form__item" type="text" class="register__form__item" name="firstName" placeholder="Имя">
+                      <input id="register__form__item" type="text" class="register__form__item" name="firstName" placeholder="Имя*" required>
+                    </li>
+                    <li>
+                      <!-- <p><strong>Ваша фамилия</strong></p> -->
+                      <input id="register__form__item" type="text" class="register__form__item" name="lastName" placeholder="Фамилия*" required>
+                    </li>
+                    <li>
+                      <!-- <p><strong>Ваш номер телефона</strong></p> -->
+                      <input id="register__form__item" type="text" class="register__form__item" name="patronymic" placeholder="Отчество">
                     </li>
                     <li>
                       <!-- <p><strong>Номер студенческого билета</strong></p> -->
-                      <input id="register__form__item" type="text" class="register__form__item" name="login" placeholder="Логин">
+                      <input id="register__form__item" type="tel" class="register__form__item" name="login" placeholder="Логин / Телефон*" required>
                     </li>
-                    <li>
-                      <!-- <p><strong>Ваш пароль</strong></p> -->
-                      <input id="register__form__item" type="password" class="register__form__item" name="class" placeholder="Группа/Кафедра">
-                    </li>
-                    <li>
-                      <!-- <p><strong>Ваш пароль</strong></p> -->
-                      <input id="register__form__item" type="password" class="register__form__item" name="password" placeholder="Пароль">
-                    </li>
+                    
+                    
                   </ul>
                   <ul class="register__form-right">
+                    
                     <li>
-                      <!-- <p><strong>Ваша фамилия</strong></p> -->
-                      <input id="register__form__item" type="text" class="register__form__item" name="lastName" placeholder="Фамилия">
+                      <!-- <p><strong>Ваш пароль</strong></p> -->
+                      <input id="register__form__item" type="text" class="register__form__item" name="class" placeholder="Группа/Кафедра*" required>
                     </li>
                     <li>
                       <!-- <p><strong>Ваш email</strong></p> -->
                       <input id="register__form__item" type="email" class="register__form__item" name="mail" placeholder="E-mail">
                     </li>
+                    
                     <li>
-                      <!-- <p><strong>Ваш номер телефона</strong></p> -->
-                      <input id="register__form__item" type="tel" class="register__form__item" name="phone" placeholder="Телефонный номер">
+                      <!-- <p><strong>Ваш пароль</strong></p> -->
+                      <input id="register__form__item" type="password" class="register__form__item" name="password" placeholder="Пароль*" required>
                     </li>
                     <li>
                       <!-- <p><strong>Подтверждение пароля</strong></p> -->
-                      <input id="register__form__item" type="password" class="register__form__item" name="password_2" placeholder="Подтверждение пароля">
+                      <input id="register__form__item" type="password" class="register__form__item" name="password_2" placeholder="Подтверждение пароля*" required>
                     </li>
+                    
+                    
                   </ul>
                 </div>
                 <div class="register__form__textarea">
@@ -87,7 +96,7 @@
                   <textarea class="register__form__textarea__about" name="aboutMe" placeholder="О себе"></textarea>
                 </div>
                 <div class="register__form__submit">
-                  <input id="register__form__sub" type="submit" name="enter" class="register__form__sub" value="Зарегистрироваться">                  
+                  <button id="register__form__sub" type="submit" id="regBtn" name="enter" class="register__form__sub">Зарегистрироваться</button>               
                 </div>  
 
               </form>
@@ -105,7 +114,11 @@
 
       </div>
     </div> 
-    <script src="@@webRoot/js/index.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="@@webRoot/js/main.js"></script>
     <script> 
       
     </script>
