@@ -1,24 +1,29 @@
-function getSession(){
+function getSession(name){ 
+  var obj; 
   $.ajax({
     type: 'POST',
+    async: false,
     url: 'api/_session.php',
-    data: ({get_session: true, session_name: 'user_id'}),
-    success: function(res){
-      var sessions = JSON.parse(res);
-  
-      console.log(sessions);
+    data: {'get_session': true, 'session_name': name},
+    dataType: 'json',
+    success: function(data){
+      obj = JSON.parse(data);
     }
-  });
-}
+  });  
+  return obj;
+} 
+ 
 
 function showMessages(){
-  var user_id = getSession();
-  var wrapper = $('#showMessages');
+  var user_id = getSession("user_id");
+      chat_id = getSession("chat_id");
+      wrapper = $('#showMessages');
+
 
   $.ajax({
     type: 'POST',
     url: 'api/showMessages.php',
-    data: ({chat_id: 1, user_id: 1}),
+    data: ({chat_id: chat_id, user_id: user_id}),
     success: function(res){
       var messages = JSON.parse(res);
       wrapper.empty();
@@ -30,7 +35,7 @@ function showMessages(){
            m.content + '</p></li>';
         }
         else {
-          message = '<li class="public__messege__enemy"> <div class="public__messege__enemy__ava interclutor__ava"><!-- <img src=""> --></div> <div class="public__messege__enemy__text"><p class="public__messege__enemy__text__first">' +
+          message = '<li class="public__messege__enemy"> <div class="public__messege__enemy__ava interclutor__ava">'+m.user_id+'</div> <div class="public__messege__enemy__text"><p class="public__messege__enemy__text__first">' +
            m.content +'</p> </div></li>';
         }
         wrapper.append(message);

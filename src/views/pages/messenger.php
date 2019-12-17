@@ -234,42 +234,7 @@
                   </div>
                   <div class="public">
                     <ul id="showMessages" class="public__messege">
-                      <li class="public__messege__enemy">
-                        <div class="public__messege__enemy__ava interclutor__ava">
-                          <!-- <img src=""> -->
-                        </div>
-                        <div class="public__messege__enemy__text">
-                          <p class="public__messege__enemy__text__first">Добрый день!Ко вторнику надо скинуть диаграммы</p>
-                        </div>
-                      </li>
-                      <li class="public__messege__my">
-                        <p class="public__messege__my__first">
-                          Добрый день! Обязательно скниу, постараюсь сделать!
-                        </p>
-                      </li>
-                      <li class="public__messege__enemy">
-                        <div class="public__messege__enemy__ava interclutor__ava">
-                          <!-- <img src=""> -->
-                        </div>
-                        <div class="public__messege__enemy_text">
-                          <p class="public__messege__enemy__text__first">Добрый день!Ко вторнику надо скинуть диаграммы</p>
-                          <p class="public__messege__enemy__text__last borius">Добрый день!Ко вторнику надо скинуть диаграммы</p>
-                        </div>
-                      </li>
-                      <li class="public__messege__my">
-                        <p class="public__messege__my__first">
-                          Добрый день! Обязательно скниу, постараюсь сделать!
-                        </p>
-                      </li>
-                      <li class="public__messege__enemy">
-                        <div class="public__messege__enemy__ava interclutor__ava">
-                          <!-- <img src=""> -->
-                        </div>
-                        <div class="public__messege__enemy_text">
-                          <p class="public__messege__enemy__text__first">Добрый день!Ко вторнику надо скинуть диаграммы</p>
-                          <p class="public__messege__enemy__text__last">Добрый день!Ко вторнику надо скинуть диаграммы</p>
-                        </div>
-                      </li>
+                       
                     </ul>
                   </div>
                   <div class="chat_send">
