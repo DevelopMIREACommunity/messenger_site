@@ -25,6 +25,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f7f7;
 }
+
+input{
+  outline: none;
+}
+
+textarea{
+  outline: none;
+}
+
+button{
+  outline: none;
+}
   
 *, *:before, *:after {
   box-sizing: border-box;

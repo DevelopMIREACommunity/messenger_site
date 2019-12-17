@@ -12,6 +12,7 @@
 }
 
 .offer__block {
+	margin-left: 50px;
 	margin-top: 350px;
 	width: 60%;
 }
@@ -31,7 +32,12 @@
 	width: 40%;
 }
 
+.offer__img-block img{
+	margin-left: 50px;
+}
+
 .offer__img {
+	margin-left: 25px;
 	width: 300px;
 	margin: 150px auto;
 }
@@ -104,7 +110,7 @@
 
 /*----- footer -----*/
 
-.footer {
+.index_footer {
 	padding: 25px 75px;
 	background-color: #59C0E6;
 	-webkit-box-pack: justify;
@@ -113,14 +119,14 @@
 
 }
 
-.footer h3 {
+.index_footer h3 {
 	color: #fff;
 	font-weight: 700;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.footer a {
+.index_footer a {
 	color: #fff;
 	margin-top: 5px;
 	font-weight: 500;
