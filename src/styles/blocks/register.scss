@@ -31,8 +31,16 @@
 	width: 309px;
 	height: 44px;
 	border: 1px solid #979797;
-	border-radius: 0px;
+	border-radius: 10px;
+	font-size: 18px;
+    font-family: "Akrobat-Regular";
+    font-weight: 500;
 }
+
+.register__form-leftright ul li p{
+	text-align: left;
+}
+
 
 .register__form__sub{
 	border: 1px solid #979797;
@@ -44,12 +52,12 @@
 	margin: 0;
 	padding: 11px 20px;
 	font-weight: 700;
-	font-family: "Akrobat";
+	font-family: "Akrobat-Regular";
 	margin-top: 20px;
 }
 
 .register__form__sub:hover{
-	border: 1px solid #979797;
+	/*border: 1px solid #979797;
 	background: white;
 	width: 309px;
 	height: 44px;
@@ -58,8 +66,32 @@
 	margin: 0;
 	padding: 11px 20px;
 	font-weight: 700;
-	font-family: "Akrobat";
-	transition: all 1s;
+	font-family: "Akrobat-Regular";
+	transition: all 1s;*/
+	background: white;
+	color: #59C0E6;
+	font-weight: 700;
+	font-family: "Akrobat-Regular";
+	transition: all 1s
+}
+
+.register__form__textarea{
+	padding: 0 374px;
+}
+
+.register__form__textarea p {
+	text-align: left;
+}
+
+textarea{
+	padding: 30px 27px 20px 27px;
+}
+
+.register__form__textarea__about{
+	border: 1px solid #979797;
+	font-size: 18px;
+    font-family: "Akrobat-Regular";
+    font-weight: 500;
 }
 
 .register__form__submit{
