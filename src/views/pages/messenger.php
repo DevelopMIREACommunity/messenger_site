@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -232,7 +233,7 @@
                     </div>
                   </div>
                   <div class="public">
-                    <ul class="public__messege">
+                    <ul id="showMessages" class="public__messege">
                       <li class="public__messege__enemy">
                         <div class="public__messege__enemy__ava interclutor__ava">
                           <!-- <img src=""> -->
@@ -297,9 +298,10 @@
 
       </div>
     </div> 
-    <script src="@@webRoot/js/index.js"></script>
-    <script> 
-      
-    </script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="@@webRoot/js/main.js"></script>
   </body>
 </html>
