@@ -30,13 +30,15 @@
           <div class="container">
             <div class="messenger">
               <div class="contacts-chat">
-                <ul class="contacts">
+                <ul id="showChats" class="contacts">
                   <li class="contacts__item contacts__search">
                     <form class="contacts__form" action="" method="POST">
                       <button type="submit"></button>
                       <input name="search" placeholder="Поиск переписок" type="search">
                     </form>
                   </li>
+
+
                   <li class="contacts__item">
                     <div class="contacts__item-avachatwith">
                       <div class="contacts__item__ava">
@@ -57,166 +59,8 @@
                       </div>
                     </div>
                   </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts__item-avachatwith">
-                      <div class="contacts__item__ava">
-                        <!-- <img src="#"> -->
-                      </div>
-                      <div class="contacts__item__chatwith">
-                        <p class="contacts__item__chatwith_name">
-                          Имя Фамилия
-                        </p>
-                        <p class="contacts__item__chatwith__last">
-                          Последенее сообщение
-                        </p>
-                      </div>
-                      <div class="contacts__item__number">
-                        <div>
-                          <p>2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+
+                  
                 </ul>
                 <div class="chat">
                   <div class="interclutor">

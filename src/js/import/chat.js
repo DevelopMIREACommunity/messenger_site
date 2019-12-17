@@ -12,13 +12,40 @@ function getSession(name){
   });  
   return obj;
 } 
- 
+var user_id = getSession("user_id");
+    chat_id = getSession("chat_id");
+
+function showChats(){
+  var wrapper = $('#showChats');
+  $.ajax({
+    type: 'POST',
+    url: 'api/showChats.php',
+    data: ({user_id: user_id}),
+    success: function(res){
+      var messages = JSON.parse(res); 
+      wrapper.empty();
+      if (messages[0]){
+        messages[1].forEach(function(m) {
+          var message = '<li class="contacts__item"> <div class="contacts__item-avachatwith"> <div class="contacts__item__ava" '+
+          '<!-- <img src="#">   </div> <div class="contacts__item__chatwith"> <p class="contacts__item__chatwith_name">' +
+          m.name +
+          '</p> <p class="contacts__item__chatwith__last">'+
+          m.lastMessage +
+          '</p> </div> <div class="contacts__item__number">  </div> </div> </li>';
+
+          wrapper.append(message);
+        });
+      }
+    }
+  });
+}
+showChats();
+setInterval(showChats, 3500);
+
+
 
 function showMessages(){
-  var user_id = getSession("user_id");
-      chat_id = getSession("chat_id");
-      wrapper = $('#showMessages');
-
+  var wrapper = $('#showMessages'); 
 
   $.ajax({
     type: 'POST',
