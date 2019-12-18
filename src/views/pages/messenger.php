@@ -60,13 +60,13 @@
                     </div>
                   </li>
 
-                  
+
                 </ul>
                 <div class="chat">
-                  <div class="interclutor">
-                    <div class="interclutor__ava">
-                      <!-- <img src=""> -->
-                    </div>
+                  <div class="interclutor" id="chat_title">
+                    <!-- <div class="interclutor__ava">
+                       <img src=""> -->
+                    <!-- </div>
                     <div class="interclutor__info">
                       <p class="interclutor__info__name">
                         Миронов А.Н.
@@ -74,7 +74,7 @@
                       <p class="interclutor__info__status">
                         Онлайн 5 мин. назад
                       </p>
-                    </div>
+                    </div>  -->
                   </div>
                   <div class="public">
                     <ul id="showMessages" class="public__messege">
@@ -90,7 +90,7 @@
                         <input id="chat__form__item" type="text" class="chat__form__item" name="send" placeholder="Написать сообщение">
                       </div>
                       <div class="send">
-                        <button type="submit" class="send__btn"><i class="fa fa-paper-plane fa-fw"></i></button>
+                        <button id="sendMsgBtn" type="submit" class="send__btn"><i class="fa fa-paper-plane fa-fw"></i></button>
                       </div>
                   </form>
                   </div>
