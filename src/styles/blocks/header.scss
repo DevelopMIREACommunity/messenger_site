@@ -1,1 +1,24 @@
-// scss header
+.menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 48px 118px 48px 168px;
+	background: #59C0E6;
+	color: white;
+
+}
+
+.menu__item a{
+  color: white;
+  font-size: 24px;
+  margin-left: 26px;
+}
+
+.menu__item a:hover{
+  color: #D8D8D8;
+  font-size: 24px;
+  margin-left: 26px;
+}
+
+.menu_logo{
+	// font-size: 48px;
+}

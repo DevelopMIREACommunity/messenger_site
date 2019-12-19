@@ -1,6 +1,29 @@
 // scss footer
-.header {
-	&-top {
+.enter{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
 
-	}
+}
+
+.enter p{
+	margin-bottom: 25px
+}
+
+.enter a{
+	border: 1px solid #F2BB64;
+	padding: 10px 20px;
+	font-weight: 700;
+	color: black;
+	padding: 10px 70px;
+}
+
+.enter a:hover{
+	border: 1px solid #F2BB64;
+	padding: 10px 20px;
+	font-weight: 700;
+	color: white;
+	background: black;
+	padding: 10px 70px;
+	transition: all 1s;
 }

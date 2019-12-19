@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Шаблон</title>
+    <title>Главная</title>
     <meta name="theme-color" content="#fff" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -15,35 +15,127 @@
     />
     <link rel="icon" type="image/png" href="@@webRoot/img/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="@@webRoot/img/favicon/favicon-96x96.png" sizes="96x96">
-    
 
     <link rel="stylesheet" href="@@webRoot/styles/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <div class="wrapper">
+ <body>
+    <header class="header">
       <div class="container">
-        <header class="header">
-           Заголовок
-        </header>
-        <!-- /.header --> 
-
-        <div  class="wrapper-content" >
-          <div class="container">
-            <h1>Центральная часть</h1>
-          </div>
-        </div>
-        <!-- /.content -->
-
-        <footer class="footer">
-           Футер
-        </footer>
-
+        <nav>
+          <ul class="menu">
+            <li class="menu__item menu_logo">
+              <a href="register.php">7DEVMessenger</a>
+            </li>
+            <li class="menu__item">
+              <a href="login.php">Рассписание</a>
+            </li>
+            <li class="menu__item">
+              <a href="login.php">Вход/Регистрация</a>
+            </li>
+          </ul>
+      </nav>
       </div>
-    </div> 
-    <script src="@@webRoot/js/index.js"></script>
-    <script> 
-      
-    </script>
-  </body>
+    </header>
+  <section class="main-section">
+    <div class="container">
+      <div class="offer d-flex">
+        <div class="offer__block">
+          <h1 class="offer__title">
+            Просто. Удобно. Быстро.
+          </h1>
+          <p class="offer__txt">
+            Мессенджер, предназначенный для внутривузовского общения студентов и преподавателей с целью упрощения процесса обучения.
+          </p>
+        </div>
+        <div class="offer__img-block">
+          <img class="offer__img" src="@@webRoot/img/black-iphone.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="features d-flex">
+      <div class="feature feature_blue">
+        <p class="feature__txt">
+          Преподавателям. <br><br>
+          Создавайте чаты групп учеников для общения со студентами. Отсылайте информация о лабораторных и практических занятиях в удобном формате.
+        </p>
+        <img src="@@webRoot/img/white-iphone.png" alt="" class="feature__img">
+      </div>
+      <div class="feature feature_brown">
+        <div class="feature__picture" style="padding-top: 0;overflow: hidden;">
+          <img src="@@webRoot/img/student.jpg" alt="Студентам" style="max-width: none;height: auto; margin-left: -120px;">
+        </div>
+        <p class="feature__txt">
+          Студентам. <br><br>
+          Больше не надо заходить каждый раз на почту, чтобы найти лабораторную. Вся информация в одном месте! 
+          Опаздываете на пару? Рассписание занятий вам поможет. 
+        </p>
+      </div>
+    </div>
+    <a href="#" class="btn cta">
+      Начать пользоваться
+    </a>
+  </section>
+  <footer class="index_footer d-flex">
+    <div class="dev-messenger">
+      <h3 class="dev-messenger__title">
+        7DEVMessenger
+      </h3>
+      <ul class="dev-messenger__list">
+        <li class="dev-messenger__item">
+          <a href="#" class="dev-messenger__link">
+            Расписание
+          </a>
+        </li>
+        <li class="dev-messenger__item">
+          <a href="login.php" class="dev-messenger__link">
+            Войти
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="for-students">
+      <h3 class="for-students__title">
+        Студентам
+      </h3>
+      <ul class="for-students__list">
+        <li class="for-students__item">
+          <a href="register.php" class="for-students__link">
+            Регистрация
+          </a>
+        </li>
+        <li class="for-students__item">
+          <a href="login.php" class="for-students__link">
+            Войти
+          </a>
+        </li>
+        <li class="for-students__item">
+          <a href="https://vk.com/grabomska" class="for-students__link">
+            Контактная информация
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="for-download">
+      <h3 class="for-download__title">
+        На телефон
+      </h3>
+      <ul class="for-download__list">
+        <li class="for-download__item">
+          <a href="#" class="for-download__link">
+            iOS
+          </a>
+        </li>
+        <li class="for-download__item">
+          <a href="#" class="for-download__link">
+            Android
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
