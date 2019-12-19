@@ -22,23 +22,23 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <header class="header">
-          <div class="container">
-            <nav>
-              <ul class="menu">
-                <li class="menu__item menu_logo">
-                  <a href="#"><img src="" alt="LOGO"></a>
-                </li>
-                <li class="menu__item">
-                  <a href="#">Рассписание</a>
-                </li>
-                <li class="menu__item">
-                  <a href="../@@webRoot/pages/login.php">Вход/Регистрация</a>
-                </li>
-              </ul>
-          </nav>
-          </div>
-        </header>
+      <header class="header">
+        <div class="container">
+          <nav>
+            <ul class="menu">
+              <li class="menu__item menu_logo">
+                <a href="index.html">7DEVMessenger</a>
+              </li>
+              <li class="menu__item">
+                <a href="login.php">Рассписание</a>
+              </li>
+              <li class="menu__item">
+                <a href="login.php">Вход/Регистрация</a>
+              </li>
+            </ul>
+        </nav>
+        </div>
+      </header>
         <!-- /.header --> 
 
         <div  class="wrapper-content" >

@@ -9,6 +9,11 @@ const requireDir = require('require-dir'),
       dist: './dist/',
       watch: ['./src/blocks/**/*.{html,php}', './src/views/**/*.{html,php}']
     },
+    api: {
+      src: ['./src/api/*.{html,php}'],
+      dist: './dist/api/',
+      watch: ['./src/api/*.{html,php}']
+    },
     styles: {
       src: './src/styles/main.{scss,sass}',
       dist: './dist/styles/',
@@ -66,6 +71,7 @@ export const development = gulp.series(
   'clean',
   gulp.parallel([
     'views',
+    'api',
     'styles',
     'scripts',
     'images',
@@ -81,6 +87,7 @@ export const prod = gulp.series(
   'clean',
   gulp.series([
     'views',
+    'api',
     'styles',
     'scripts',
     'images',

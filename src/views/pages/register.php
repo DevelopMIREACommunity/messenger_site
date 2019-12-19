@@ -27,13 +27,13 @@
             <nav>
               <ul class="menu">
                 <li class="menu__item menu_logo">
-                  <a href="#"><img src="" alt="LOGO"></a>
+                  <a href="index.html">7DEVMessenger</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Рассписание</a>
+                  <a href="login.php">Рассписание</a>
                 </li>
                 <li class="menu__item">
-                  <a href="../@@webRoot/pages/login.php">Вход/Регистрация</a>
+                  <a href="login.php">Вход/Регистрация</a>
                 </li>
               </ul>
           </nav>
