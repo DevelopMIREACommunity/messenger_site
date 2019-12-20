@@ -50,7 +50,7 @@
                 <div class="login__form-leftright">
                   <ul class="login__form-left">
                     <li>
-                      <input id="login__form__item" type="tel" class="login__form__item" name="login" placeholder="Логин / Телефон">
+                      <input id="login__form__item" type="tel" class="login__form__item phone" name="login" placeholder="Логин / Телефон">
                     </li>
                     <li>
                       <input id="login__form__item" type="password" class="login__form__item" name="password" placeholder="Пароль">
@@ -81,5 +81,10 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="@@webRoot/js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.phone').mask('(000) 000-0000');
+    });
+    </script>
   </body>
 </html>
