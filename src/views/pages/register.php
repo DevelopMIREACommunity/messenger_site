@@ -30,7 +30,7 @@
                   <a href="index.html">7DEVMessenger</a>
                 </li>
                 <li class="menu__item">
-                  <a href="login.php">Рассписание</a>
+                  <a href="login.php">Расписание</a>
                 </li>
                 <li class="menu__item">
                   <a href="login.php">Вход/Регистрация</a>
