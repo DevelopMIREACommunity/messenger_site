@@ -42,18 +42,13 @@
                           <nav class="menu-bar">
                             <ul class="">
                               <li class="menu-bar__item newGrouplink">
-                                <a href="">
+                                <a href="#">
                                   Новая группа
                                 </a>
                               </li>
-                              <li class="menu-bar__item  profile">
-                                <a href="">
+                              <li class="menu-bar__item  profilelink">
+                                <a href="#">
                                   Профиль
-                                </a>
-                              </li>
-                              <li class="menu-bar__item  timetable">
-                                <a href="">
-                                  Расписание
                                 </a>
                               </li>
                             </ul>
@@ -87,7 +82,7 @@
 
                     <div class="newGroup">
                       <div class="newGroup__back">
-                        <i class="fa fa-long-arrow-left"></i>
+                        <i class="fa fa-long-arrow-left newGroup__back__link"></i>
                         <p>Добавить участников</p>
                       </div>
                       <div class="newGroup__contacts__add">
@@ -167,7 +162,26 @@
                     </div>
 
                     <div class="profile">
-                      
+                      <div class="profile__back">
+                        <i class="fa fa-long-arrow-left profile__back__link"></i>
+                        <p>Профиль</p>
+                      </div>
+                      <div class="profile__ava">
+                        
+                      </div>
+                      <div class="profile__about">
+                        <form class="profile__form">
+                          <div class="profile__form__name__input">
+                            <p>Ваше имя</p>
+                            <input type="text" name="contacts_name" class="profile__form__input" placeholder="Введите имя контакта">
+                          </div>
+                          <p class="profile__form__about__name">Это не имя пользователя и пароль. Данное имя будут видеть ваши контакты</p>
+                          <div class="profile__form__status__input">
+                            <p>Ваш статус</p>
+                            <input type="text" name="contacts_name" class="profile__form__input" placeholder="Название беседы">
+                          </div>
+                        </form>
+                      </div>
                     </div>
 
 

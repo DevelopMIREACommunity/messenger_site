@@ -2,8 +2,23 @@ $('.contacts-chat__menu').click(function(){
   $(".contacts-chat__menu__bar").slideToggle();
 });
 
-$('.fa-long-arrow-left').click(function(){
+$('.newGrouplink').click(function(){
+  $(".newGroup").css("display","block");
+  $(".contacts-inner").css("display","none");
+});
+
+$('.profilelink').click(function(){
+  $(".profile").css("display","block");
+  $(".contacts-inner").css("display","none");
+});
+
+$('.newGroup__back__link').click(function(){
   $(".newGroup").css("display","none");
+  $(".contacts-inner").css("display","block");
+});
+
+$('.profile__back__link').click(function(){
+  $(".profile").css("display","none");
   $(".contacts-inner").css("display","block");
 });
 
