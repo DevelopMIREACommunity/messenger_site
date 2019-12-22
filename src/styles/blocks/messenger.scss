@@ -45,11 +45,80 @@
 	border: 1px solid #979797;
 }
 
+.contacts__search{
+	position:relative;
+}
+
 .contacts__form{
   position: relative;
   width: 300px;
   margin: 0 auto;
+  margin-right: 16px;
 }
+
+.contacts-chat__menu{
+	margin-right: 5px;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.contacts-chat__menu__bar{
+	display: none;
+	position: absolute;
+    right: 14px;
+    margin-top: 7px;
+    background: white;
+    box-shadow: 0px 0px 15px;
+}
+
+.contacts-chat__menu__bar a{
+    color: #5f5a5a
+}
+
+.contacts-inner{
+	display: none;
+}
+
+.newGroup__back{
+	background:#22c1ea;
+	padding: 40px 85px 10px 40px;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newGroup__back i{
+	cursor: pointer;
+    padding: 5px;
+}
+
+.newGroup__back i:hover{
+	cursor: pointer;
+}
+
+.newGroup__form{
+	padding: 50px 30px 20px 30px
+}
+
+.newGroup__form__input{
+	font-family: Akrobat;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 0;
+    border-radius: 0;
+    padding-bottom:7px;
+}
+
+.menu-bar__item{
+	font-size: 18px;
+    padding: 10px;
+}
+
+.menu-bar__item:hover{
+	background:#dad1d1;
+}
+
 .contacts__form input, button {
   border: none;
   outline: none;
@@ -85,9 +154,20 @@
     align-items: center;
     background: white;
     padding: 10px 16px 0 16px;
+    background:#efe7e7
+}
+
+.newGroup__contacts__item{
+	height: 40px;
+	display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 16px 0 16px;
+    font-size: 16px;
 }
 
 .contacts__search{
+	display: flex;
 	background:#B4B4B4;
 	padding: 10px 16px;
 }
@@ -99,11 +179,26 @@
 	border-radius: 50%;
 }
 
+.newGroup__contacts__item__ava{
+	width: 25px;
+	height: 25px;
+	background: gray;
+	border-radius: 50%;
+}
+
 .contacts__item-avachatwith{
 	padding: 0 0 10px 0;
 	display: flex;
 	width: 100%;
 	border-bottom:1px solid #979797;
+}
+
+.newGroup__contacts__item-avachatwith{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	background: #ded2d2;
+	border-radius:10px;
 }
 
 .contacts__item__number div{
@@ -115,7 +210,21 @@
 	text-align: center;
 }
 
+.newGroup__contacts__item__number div{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #59C0E6;
+	margin-left: 50px;
+	text-align: center;
+}
+
 .contacts__item__number div p{
+	color: white;
+	font-size: 10px;
+}
+
+.newGroup__contacts__item__number div p{
 	color: white;
 	font-size: 10px;
 }

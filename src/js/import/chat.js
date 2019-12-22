@@ -1,3 +1,12 @@
+$('.contacts-chat__menu').click(function(){
+  $(".contacts-chat__menu__bar").slideToggle();
+});
+
+$('.fa-long-arrow-left').click(function(){
+  $(".newGroup").css("display","none");
+  $(".contacts-inner").css("display","block");
+});
+
 function getSession(name){ 
   var obj; 
   $.ajax({
