@@ -7,8 +7,8 @@
   $query = "SELECT DISTINCT c.id, c.name, m.content as lastMessage FROM chat c
   INNER JOIN users u ON u.id = $user_id
   INNER JOIN party p ON c.id = p.chat_id
-  LEFT JOIN message m ON c.id = m.chat_id ORDER BY m.date";
- 
+  LEFT JOIN (SELECT DISTINCT * FROM message m ORDER BY m.date DESC) m ON c.id = m.chat_id GROUP BY c.id, c.name ORDER BY m.date";
+
 
   $res = $chat_db->query($query);
   $count_rows = $res->rowCount();

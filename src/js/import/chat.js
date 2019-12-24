@@ -2,10 +2,26 @@ $('.contacts-chat__menu').click(function(){
   $(".contacts-chat__menu__bar").slideToggle();
 });
 
-$('.fa-long-arrow-left').click(function(){
+$('.newGrouplink').click(function(){
+  $(".newGroup").css("display","block");
+  $(".contacts-inner").css("display","none");
+});
+
+$('.profilelink').click(function(){
+  $(".profile").css("display","block");
+  $(".contacts-inner").css("display","none");
+});
+
+$('.newGroup__back__link').click(function(){
   $(".newGroup").css("display","none");
   $(".contacts-inner").css("display","block");
 });
+
+$('.profile__back__link').click(function(){
+  $(".profile").css("display","none");
+  $(".contacts-inner").css("display","block");
+});
+
 
 function getSession(name){ 
   var obj; 
@@ -37,7 +53,7 @@ function showChats(){
       wrapper.empty();
       if (messages[0] == true){
         messages[1].forEach(function(m) {
-          var mes = "Сообщений пока нет";
+          var mes = "Чатов пока нет";
           if (m.lastMessage != null)
             {mes = m.lastMessage}
 
@@ -70,7 +86,7 @@ function showMessages(){
       wrapper.empty();
       if (messages[0]){
         messages[1].forEach(function(m) {
-        var message = "";
+        var message = "Сообщений пока нет";
         if(m.user_id == user_id){
           message = '<li class="public__messege__my"><p class="public__messege__my__first">' +
            m.content + '</p></li>';
@@ -152,3 +168,36 @@ function sendMessage(event){
   });
   input.val("");
 }
+
+
+
+// --------------- Добавление чата ----------
+
+// Вывод пользователей
+$('#openChatAdd').click(showUsers);
+
+ 
+function showUsers(event){
+  event.preventDefault();
+  var wrapper = $('#showUsers'); 
+  console.log("Шь цщклштп");
+  $.ajax({
+    type: 'POST',
+    url: 'api/showMessages.php',
+    data: '',
+    success: function(res){
+      var messages = JSON.parse(res);
+      wrapper.empty();
+      if (messages[0]){
+        messages[1].forEach(function(m) {
+          var message = "Пользователей нет";
+          message = '<li class="newGroup__contacts__item"><div class="newGroup__contacts__item-avachatwith"><div class="newGroup__contacts__item__ava"></div><div class="newGroup__contacts__item__chatwith"><p class="newGroup__contacts__item__chatwith_name">' +
+          m.firstName+" "+ m.lastName + '</p></div></div></li>';
+
+          wrapper.append(message);
+        });
+      }
+    }
+  });
+}
+

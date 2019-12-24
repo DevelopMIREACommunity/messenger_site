@@ -29,20 +29,25 @@
           <div class="container">
             <div class="messenger">
               <div class="contacts-chat">
-                <div id="showChats" class="contacts">
+                <div  class="contacts">
                   <div class="contacts-inner">
+
+
                     <div class="contacts__search contacts__item ">
+
                       <form class="contacts__form" action="" method="POST">
                         <button type="submit"></button>
                         <input name="search" placeholder="Поиск переписок" type="search">
                       </form>
+
+
                       <div class="contacts-chat__menu">
                         <i class="fa fa-ellipsis-v"></i>
                         <div class="contacts-chat__menu__bar">
                           <nav class="menu-bar">
                             <ul class="">
                               <li class="menu-bar__item newGrouplink">
-                                <a href="">
+                                <a id="openChatAdd" href="">
                                   Новая группа
                                 </a>
                               </li>
@@ -60,8 +65,11 @@
                           </nav>
                         </div>
                       </div>
+
                     </div>
-                    <ul class="contacts__items">
+
+
+                    <ul id="showChats" class="contacts__items">
                       <li class="contacts__item">
                         <div class="contacts__item-avachatwith">
                           <div class="contacts__item__ava">
@@ -85,106 +93,55 @@
                     </ul>
                   </div>
 
-                    <div class="newGroup">
-                      <div class="newGroup__back">
-                        <i class="fa fa-long-arrow-left"></i>
-                        <p>Добавить участников</p>
-                      </div>
-                      <div class="newGroup__contacts__add">
-                        <ul>
-                          <li class="newGroup__contacts__item">
-                            <div class="newGroup__contacts__item-avachatwith">
-                              <div class="newGroup__contacts__item__ava">
-                                <!-- <img src="#"> -->
-                              </div>
-                              <div class="newGroup__contacts__item__chatwith">
-                                <p class="newGroup__contacts__item__chatwith_name">
-                                  Имя Фамилия
-                                </p>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="newGroup__contacts__item">
-                            <div class="newGroup__contacts__item-avachatwith">
-                              <div class="newGroup__contacts__item__ava">
-                                <!-- <img src="#"> -->
-                              </div>
-                              <div class="newGroup__contacts__item__chatwith">
-                                <p class="newGroup__contacts__item__chatwith_name">
-                                  Имя Фамилия
-                                </p>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <form class="newGroup__form">
-                          <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Введите имя контакта">
-                          <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Название беседы">
-                        </form>
-                        <ul>
-                          <li class="contacts__item">
-                            <div class="contacts__item-avachatwith">
-                              <div class="contacts__item__ava">
-                                <!-- <img src="#"> -->
-                              </div>
-                              <div class="contacts__item__chatwith">
-                                <p class="contacts__item__chatwith_name">
-                                  Имя Фамилия
-                                </p>
-                                <p class="contacts__item__chatwith__last">
-                                  Последенее сообщение
-                                </p>
-                              </div>
-                              <div class="contacts__item__number">
-                                <div>
-                                  <p>2</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="contacts__item">
-                            <div class="contacts__item-avachatwith">
-                              <div class="contacts__item__ava">
-                                <!-- <img src="#"> -->
-                              </div>
-                              <div class="contacts__item__chatwith">
-                                <p class="contacts__item__chatwith_name">
-                                  Имя Фамилия
-                                </p>
-                                <p class="contacts__item__chatwith__last">
-                                  Последенее сообщение
-                                </p>
-                              </div>
-                              <div class="contacts__item__number">
-                                <div>
-                                  <p>2</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+                  <div class="newGroup">
+                    <div class="newGroup__back">
+                      <i class="fa fa-long-arrow-left"></i>
+                      <p>Добавить участников</p>
                     </div>
+                    <div class="newGroup__contacts__add">
+                      
+                      <form class="newGroup__form">
+                        <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Введите имя контакта">
+                        <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Название беседы">
+                      </form>
 
-                    <div class="profile">
+                      <ul id="showUsers">
+                        <li class="newGroup__contacts__item">
+                          <div class="newGroup__contacts__item-avachatwith">
+                            <div class="newGroup__contacts__item__ava">
+                              <!-- <img src="#"> -->
+                            </div>
+                            <div class="newGroup__contacts__item__chatwith">
+                              <p class="newGroup__contacts__item__chatwith_name">
+                                Имя Фамилия
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="newGroup__contacts__item">
+                          <div class="newGroup__contacts__item-avachatwith">
+                            <div class="newGroup__contacts__item__ava">
+                              <!-- <img src="#"> -->
+                            </div>
+                            <div class="newGroup__contacts__item__chatwith">
+                              <p class="newGroup__contacts__item__chatwith_name">
+                                Имя Фамилия
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                       
                     </div>
+                  </div>
 
-
+                  <div class="profile">
+                    
+                  </div>
                 </div>
+                
                 <div class="chat">
-                  <div class="interclutor" id="chat_title">
-                    <!-- <div class="interclutor__ava">
-                       <img src=""> -->
-                    <!-- </div>
-                    <div class="interclutor__info">
-                      <p class="interclutor__info__name">
-                        Миронов А.Н.
-                      </p>
-                      <p class="interclutor__info__status">
-                        Онлайн 5 мин. назад
-                      </p>
-                    </div>  -->
+                  <div class="interclutor" id="chat_title"> 
                   </div>
                   <div class="public">
                     <ul id="showMessages" class="public__messege">
