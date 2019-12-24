@@ -1,0 +1,72 @@
+.newGroup{
+	display: none;
+}
+
+.newGroup__back{
+	background:#22c1ea;
+	padding: 40px 85px 10px 40px;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newGroup__back i{
+	cursor: pointer;
+    padding: 5px;
+}
+
+.newGroup__back i:hover{
+	cursor: pointer;
+}
+
+.newGroup__form{
+	padding: 50px 30px 20px 30px
+}
+
+.newGroup__form__input{
+	font-family: Akrobat;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 0;
+    border-radius: 0;
+    padding-bottom:7px;
+}
+
+.newGroup__contacts__item{
+	height: 40px;
+	display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 16px 0 16px;
+    font-size: 16px;
+}
+
+.newGroup__contacts__item__ava{
+	width: 25px;
+	height: 25px;
+	background: gray;
+	border-radius: 50%;
+}
+
+.newGroup__contacts__item-avachatwith{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	background: #ded2d2;
+	border-radius:10px;
+}
+
+.newGroup__contacts__item__number div{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #59C0E6;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.newGroup__contacts__item__number div p{
+	color: white;
+	font-size: 10px;
+}
