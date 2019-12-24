@@ -22,7 +22,6 @@ $('.profile__back__link').click(function(){
   $(".contacts-inner").css("display","block");
 });
 
-
 function getSession(name){ 
   var obj; 
   $.ajax({

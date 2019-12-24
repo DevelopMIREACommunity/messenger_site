@@ -47,18 +47,13 @@
                           <nav class="menu-bar">
                             <ul class="">
                               <li class="menu-bar__item newGrouplink">
-                                <a id="openChatAdd" href="">
+                                <a href="#">
                                   Новая группа
                                 </a>
                               </li>
-                              <li class="menu-bar__item  profile">
-                                <a href="">
+                              <li class="menu-bar__item  profilelink">
+                                <a href="#">
                                   Профиль
-                                </a>
-                              </li>
-                              <li class="menu-bar__item  timetable">
-                                <a href="">
-                                  Расписание
                                 </a>
                               </li>
                             </ul>
@@ -95,7 +90,7 @@
 
                   <div class="newGroup">
                     <div class="newGroup__back">
-                      <i class="fa fa-long-arrow-left"></i>
+                      <i class="fa fa-long-arrow-left newGroup__back__link"></i>
                       <p>Добавить участников</p>
                     </div>
                     <div class="newGroup__contacts__add">
