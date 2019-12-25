@@ -70,7 +70,7 @@
         <footer class="footer">
           <div class="enter">
             <p><strong>Ещё нет аккаунта?</strong></p>
-            <a href="register.html">Зарегистрироваться</a>
+            <a href="register.php">Зарегистрироваться</a>
           </div>
         </footer>
 

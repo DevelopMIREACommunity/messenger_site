@@ -9,7 +9,7 @@ function show_messages($user_id, $chat_id) {
   // INNER JOIN users ON users.id = message.user_id";
 
   $query = "SELECT message.user_id, content, date, firstName, lastName FROM message 
-  INNER JOIN users ON users.id = message.user_id WHERE message.chat_id = $chat_id";
+  INNER JOIN users ON users.id = message.user_id WHERE message.chat_id = $chat_id ORDER BY `message`.`date` ASC";
 
   $res = $chat_db->query($query);
   $count_rows = $res->rowCount();

@@ -41,13 +41,13 @@
                       </form>
 
 
-                      <div class="contacts-chat__menu">
+                      <div  class="contacts-chat__menu">
                         <i class="fa fa-ellipsis-v"></i>
                         <div class="contacts-chat__menu__bar">
                           <nav class="menu-bar">
                             <ul class="">
                               <li class="menu-bar__item newGrouplink">
-                                <a href="#">
+                                <a href="#" id="openChatAdd">
                                   Новая группа
                                 </a>
                               </li>
@@ -96,43 +96,43 @@
                     <div class="newGroup__contacts__add">
                       
                       <form class="newGroup__form">
-                        <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Введите имя контакта">
-                        <input type="text" name="contacts_name" class="newGroup__form__input" placeholder="Название беседы">
+                        <input type="text" name="chat_name" id="chat_name" class="newGroup__form__input" placeholder="Название беседы">
+                        
+                        <input type="text" name="last" id="last-input" class="newGroup__form__input " placeholder="Поиск по фамилии">
+                        <button id="btnCreateChat" class="btn btn--primary" style="font-size: 14px;padding: 10px;">Создать чат</button>
                       </form>
+                      <p class="create_chat_error" style="color: red">
 
+                      </p>
                       <ul id="showUsers">
-                        <li class="newGroup__contacts__item">
-                          <div class="newGroup__contacts__item-avachatwith">
-                            <div class="newGroup__contacts__item__ava">
-                              <!-- <img src="#"> -->
-                            </div>
-                            <div class="newGroup__contacts__item__chatwith">
-                              <p class="newGroup__contacts__item__chatwith_name">
-                                Имя Фамилия
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="newGroup__contacts__item">
-                          <div class="newGroup__contacts__item-avachatwith">
-                            <div class="newGroup__contacts__item__ava">
-                              <!-- <img src="#"> -->
-                            </div>
-                            <div class="newGroup__contacts__item__chatwith">
-                              <p class="newGroup__contacts__item__chatwith_name">
-                                Имя Фамилия
-                              </p>
-                            </div>
-                          </div>
-                        </li>
+                        
                       </ul>
                       
 
                     </div>
                   </div>
 
-                  <div class="profile">
-                    
+                  <div class="profile"> 
+                    <div class="profile__back">
+                      <i class="fa fa-long-arrow-left profile__back__link"></i>
+                      <p>Профиль</p>
+                    </div>
+                    <div class="profile__ava">
+                      
+                    </div>
+                    <div class="profile__about">
+                      <form class="profile__form">
+                        <div class="profile__form__name__input">
+                          <p>Ваше имя</p>
+                          <input type="text" name="contacts_name" class="profile__form__input" placeholder="Введите имя контакта">
+                        </div>
+                        <p class="profile__form__about__name">Это не имя пользователя и пароль. Данное имя будут видеть ваши контакты</p>
+                        <div class="profile__form__status__input">
+                          <p>Ваш статус</p>
+                          <input type="text" name="contacts_name" class="profile__form__input" placeholder="Название беседы">
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
                 

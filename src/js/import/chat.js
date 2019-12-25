@@ -52,7 +52,7 @@ function showChats(){
       wrapper.empty();
       if (messages[0] == true){
         messages[1].forEach(function(m) {
-          var mes = "Чатов пока нет";
+          var mes = "Сообщений нет";
           if (m.lastMessage != null)
             {mes = m.lastMessage}
 
@@ -69,7 +69,7 @@ function showChats(){
   });
 }
 showChats();
-setInterval(showChats, 23500);
+setInterval(showChats, 3500);
 
 
 
@@ -86,12 +86,13 @@ function showMessages(){
       if (messages[0]){
         messages[1].forEach(function(m) {
         var message = "Сообщений пока нет";
+        console.log(m);пеш
         if(m.user_id == user_id){
           message = '<li class="public__messege__my"><p class="public__messege__my__first">' +
            m.content + '</p></li>';
         }
         else {
-          message = '<li class="public__messege__enemy"> <div class="public__messege__enemy__ava interclutor__ava">'+m.user_id+'</div> <div class="public__messege__enemy__text"><p class="public__messege__enemy__text__first">' +
+          message = '<li class="public__messege__enemy"> <div class="public__messege__enemy__ava interclutor__ava"></div> <div class="public__messege__enemy__text"><p class="public__messege__enemy__text__first">' +
            m.content +'</p> </div></li>';
         }
         wrapper.append(message);
@@ -100,7 +101,8 @@ function showMessages(){
     }
   });
 }
-setInterval(showMessages, 500);
+showMessages();
+setInterval(showMessages, 111500);
 
 
 
@@ -173,26 +175,31 @@ function sendMessage(event){
 // --------------- Добавление чата ----------
 
 // Вывод пользователей
-$('#openChatAdd').click(showUsers);
+$('#openChatAdd, .newGrouplink').click(showUsers);
+$('#last-input').on("input", showUsers);
 
  
 function showUsers(event){
-  event.preventDefault();
+  
   var wrapper = $('#showUsers'); 
-  console.log("Шь цщклштп");
+      last = $('#last-input').val();
+  
   $.ajax({
     type: 'POST',
-    url: 'api/showMessages.php',
-    data: '',
+    url: 'api/showUsers.php',
+    data:({last: last}),
     success: function(res){
+
       var messages = JSON.parse(res);
+      
       wrapper.empty();
       if (messages[0]){
         messages[1].forEach(function(m) {
           var message = "Пользователей нет";
-          message = '<li class="newGroup__contacts__item"><div class="newGroup__contacts__item-avachatwith"><div class="newGroup__contacts__item__ava"></div><div class="newGroup__contacts__item__chatwith"><p class="newGroup__contacts__item__chatwith_name">' +
-          m.firstName+" "+ m.lastName + '</p></div></div></li>';
-
+          message = '<li class="newGroup__contacts__item"><div class="newGroup__contacts__item-avachatwith user_link" data-user-id="'+
+          m.id
+          +'"><div class="newGroup__contacts__item__ava"></div><div class="newGroup__contacts__item__chatwith"><p class="newGroup__contacts__item__chatwith_name">' +
+          m.firstName+" "+ m.lastName + '</p></div></div></li>'; 
           wrapper.append(message);
         });
       }
@@ -200,3 +207,57 @@ function showUsers(event){
   });
 }
 
+
+// Добавление пользователей в новый чат
+var newChatUsers = [user_id.toString()];
+$("#showUsers").on("click", ".user_link", addUsersToMassive);
+function addUsersToMassive(){
+  var local_user_id = $(this).attr('data-user-id');
+      isExists = false;
+  if(user_id != local_user_id) {
+    $.each(newChatUsers, function( index, value ) {
+      if(value == local_user_id ){
+        newChatUsers.splice(index, 1); 
+        isExists = true;
+      }
+    }); 
+    if (!isExists){
+      newChatUsers.push(local_user_id);
+    }
+  }
+  console.log(newChatUsers);
+
+}
+
+$('#btnCreateChat').click(createChat);
+// Создание чата
+function createChat(event){ 
+  event.preventDefault(); 
+  var error = $('.create_chat_error');
+      name = $('#chat_name').val();
+  if (newChatUsers.length < 2)
+  {
+    error.text("Добавьте пользователей");
+  }
+  else{ 
+    if (name == ""){
+      error.text("Название чата не может быть пустым");
+    }
+    else {
+      console.log(name, user_id, newChatUsers);
+      $.ajax({
+        type: 'POST',
+        url: 'api/createChat.php',
+        data: ({name: name, creator_id: user_id, users: newChatUsers}),
+        success: function(data){
+          var info = JSON.parse(data);
+          if(info[0]){
+            error.text("Чат создан");
+          }else{ 
+            error.text("Не удалось создать чат");
+          }
+        }
+      });
+    }
+  }
+}

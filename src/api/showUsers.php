@@ -1,10 +1,10 @@
 <?php 
   include 'DB.php';
  // Вывод пользователей
- function show_users() {
+ function show_users($last) {
   global $chat_db;
 
-  $query = "SELECT id, firstName, lastName, class FROM users";
+  $query = "SELECT id, firstName, lastName, class FROM users WHERE lastName LIKE '%$last%'";
 
 
   $res = $chat_db->query($query);
@@ -17,5 +17,5 @@
   else{
     echo json_encode([fasle, "Список пользователей пуст"]); 
   }
-}
-show_users();
+} 
+show_users($_POST['last']);
