@@ -1,7 +1,7 @@
 <?php
 function connect_chat_DB() {
   $host = 'localhost';
-  $db   = 'ms_chat';
+  $db   = 'pro10111_ms_chat';
   $user = 'alexander';
   $pass = '';
   $charset = 'utf8';

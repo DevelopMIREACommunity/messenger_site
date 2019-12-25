@@ -10,9 +10,9 @@ const requireDir = require('require-dir'),
       watch: ['./src/blocks/**/*.{html,php}', './src/views/**/*.{html,php}']
     },
     api: {
-      src: ['./src/api/*.{html,php}'],
+      src: ['./src/api/*.php'],
       dist: './dist/api/',
-      watch: ['./src/api/*.{html,php}']
+      watch: ['./src/api/*.php']
     },
     styles: {
       src: './src/styles/main.{scss,sass}',

@@ -30,7 +30,7 @@
                 <a href="index.html">7DEVMessenger</a>
               </li>
               <li class="menu__item">
-                <a href="login.php">Рассписание</a>
+                <a href="login.php">Расписание</a>
               </li>
               <li class="menu__item">
                 <a href="login.php">Вход/Регистрация</a>
@@ -50,7 +50,7 @@
                 <div class="login__form-leftright">
                   <ul class="login__form-left">
                     <li>
-                      <input id="login__form__item" type="tel" class="login__form__item" name="login" placeholder="Логин / Телефон">
+                      <input id="login__form__item" type="tel" class="login__form__item phone" name="login" placeholder="Логин / Телефон">
                     </li>
                     <li>
                       <input id="login__form__item" type="password" class="login__form__item" name="password" placeholder="Пароль">
@@ -70,7 +70,7 @@
         <footer class="footer">
           <div class="enter">
             <p><strong>Ещё нет аккаунта?</strong></p>
-            <a href="register.html">Зарегистрироваться</a>
+            <a href="register.php">Зарегистрироваться</a>
           </div>
         </footer>
 
@@ -81,5 +81,10 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="@@webRoot/js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.phone').mask('(000) 000-0000');
+    });
+    </script>
   </body>
 </html>
